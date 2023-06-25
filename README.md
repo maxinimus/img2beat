@@ -2,6 +2,10 @@
 
 This is a Python script that allows you to turn your image into a background beat using AI. This is done by converting the image to text, then using that text to generate a description of a beat that would fit the image. That beat is then created using an AI model and output as a sound file.
 
+## Explanation
+
+This script uses several AI models to convert an image into sound. The image is first converted into text using huggingface's image-to-text pipeline. That text is then fed into either Langchain's LLMChain or the poe API to generate a description of a beat that would fit the image. That beat description is then converted into sound using audiocraft's MusicGen model. 
+
 ## Requirements
 
 - Python 3.6+
